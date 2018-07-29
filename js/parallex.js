@@ -49,15 +49,7 @@
 		this.DOM.title = this.el.querySelector('.parallex_title');
 		this.DOM.desc = this.el.querySelector('.parallex_desc');
 		
-
-		if (is_touch_device()) {
-			window.addEventListener("scroll", () => {
-				requestAnimationFrame(() => {
-					const percentScroll = window.pageYOffset/screen.height;
-					this._layout(-percentScroll*1 + 0.5, -percentScroll*1 + 0.5);
-				});
-			});
-		} else {
+		if (!is_touch_device()) {
 			this._initEvents();
 		}
 	};
