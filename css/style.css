@@ -214,9 +214,11 @@ div.slideshow img {
 
 div.slideshow .frame {
 	width: 500px;
-	max-width: 100%;
+	max-width: 99.8%;
 	background: #222;
 	padding: 0px;
+	margin-left: 0.1% !important;
+	margin-right: 0.1% !important;
 	/* https://stackoverflow.com/questions/11036405/css3-border-on-a-border-radius-div */
 	border-radius: 8px;
 	overflow: hidden;
@@ -249,6 +251,7 @@ div.slideshow .holder * {
 div.slideshow .holder .frame .caption {
 	padding: 16px 8px;
 }
+
 
 /* Title */
 div.slideshow h1 {
